@@ -1,0 +1,1 @@
+Git-1.7.7.1-preview20111027.exe is downloaded from http://code.google.com/p/msysgit/downloads/detail?name=Git-1.7.7.1-preview20111027.exe&can=2&q=
