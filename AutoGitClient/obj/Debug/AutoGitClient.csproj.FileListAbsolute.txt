@@ -1,0 +1,13 @@
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.Form1.resources
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.Properties.Resources.resources
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.csproj.GenerateResource.Cache
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\bin\Debug\AutoGitClient.exe
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\bin\Debug\AutoGitClient.pdb
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.exe
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.pdb
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.frmLogs.resources
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.frmInput.resources
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\obj\Debug\AutoGitClient.frmBase.resources
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\AutoGitClient\obj\Debug\AutoGitClient.exe
+C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\AutoGitClient\obj\Debug\AutoGitClient.pdb
