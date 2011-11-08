@@ -22,7 +22,7 @@ namespace AutoGitClient
 
         private JobExecuterList el;
         private frmBase parent;
-        private string basepath;C:\Users\Toyokawa\Documents\VS.net\AutoGitClient\Common.cs
+        private string basepath;
 
         public JobList GetAllJobs()
         {

@@ -67,6 +67,7 @@ namespace AutoGitClient
 
                     case GitMessageSection.ChangesNotStaged:
                         // skip the first 3 lines.
+                        // Treating with these files/dirs is substituted by "git commit -a"
 
                         if (counter < 2)
                         {
@@ -80,8 +81,6 @@ namespace AutoGitClient
                                 counter = 0;
                                 break;
                             }
-
-                            // Substitute by commit -a
                         }
                         break;
 
@@ -192,9 +191,7 @@ namespace AutoGitClient
             psInfo.CreateNoWindow = nowindow; // コンソール・ウィンドウを開かない
 
             psInfo.UseShellExecute = false; // シェル機能を使用しない
-            //psInfo.Arguments = "git " + args;
             psInfo.Arguments = "/c git " + args;
-            //psInfo.Arguments = "/c ping localhost";
 
             psInfo.RedirectStandardInput = true; // これをfalseにすると、余分なログが出る!
             psInfo.RedirectStandardOutput = true; // 標準出力をリダイレクト
@@ -299,12 +296,8 @@ namespace AutoGitClient
 
         internal void StartCommitChanges(GitJobParameters p)
         {
-            //this.SetStartCommitLink(false);
-            //this.SetOutput("");
             Thread th = new Thread(new ParameterizedThreadStart(CommitChanges));
             th.Start(p);
-
-            //this.RefreshList();
         }
 
         internal void StartGitActions(GitJobParameters p, ActionType action)
@@ -325,7 +318,6 @@ namespace AutoGitClient
 
             th.Start(p);
         }
-        
     }
 
 

@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_6A16840CF68744A8ADEB6E15AD75ABB1"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_85B7E8C40A604FDFB991996050D1D0C9"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C479142FC03B435286D225A6BFA1BF18"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,6 +22,18 @@
         "Entry"
         {
         "MsmKey" = "8:_CA6813A540434E04A8F4DC2BD483502E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DC4C1A7B0CAF46A3888151B92D846D61"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E28CF3EF3C4C41A2B68DC99DB934990B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -61,6 +61,27 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5"
+                    {
+                    "Name" = "8:.NET Framework 3.5"
+                    "ProductCode" = "8:Microsoft.Net.Framework.3.5"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -77,23 +98,31 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0E01D12CB871447787206547368C79C3"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_429985B543A1410E933A4CFC12887489"
             {
             "Name" = "8:Git-1.7.7.1-preview20111027.exe"
             "Condition" = "8:CHECKBOXA1"
-            "Object" = "8:_85B7E8C40A604FDFB991996050D1D0C9"
+            "Object" = "8:_E28CF3EF3C4C41A2B68DC99DB934990B"
             "FileType" = "3:2"
             "InstallAction" = "3:1"
             "Arguments" = "8:/Install"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_450229DE_3AFB_4F0A_A5F8_76A3F3D24034"
+            "Identifier" = "8:_97D3334A_6A3D_430F_81B9_512531FEAD9B"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
@@ -120,9 +149,29 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6A16840CF68744A8ADEB6E15AD75ABB1"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C479142FC03B435286D225A6BFA1BF18"
             {
-            "SourcePath" = "8:..\\..\\notice.rtf"
+            "SourcePath" = "8:..\\AutoGitClient\\bin\\Debug\\autogit.cmd"
+            "TargetName" = "8:autogit.cmd"
+            "Tag" = "8:"
+            "Folder" = "8:_A82F526FBBBE4E628D19749427CB5BF6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DC4C1A7B0CAF46A3888151B92D846D61"
+            {
+            "SourcePath" = "8:notice.rtf"
             "TargetName" = "8:notice.rtf"
             "Tag" = "8:"
             "Folder" = "8:_A82F526FBBBE4E628D19749427CB5BF6"
@@ -140,30 +189,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_85B7E8C40A604FDFB991996050D1D0C9"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E28CF3EF3C4C41A2B68DC99DB934990B"
             {
-            "SourcePath" = "8:..\\..\\..\\Downloads\\Git-1.7.7.1-preview20111027.exe"
+            "SourcePath" = "8:Git-1.7.7.1-preview20111027.exe"
             "TargetName" = "8:Git-1.7.7.1-preview20111027.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_A82F526FBBBE4E628D19749427CB5BF6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:FALSE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:TRUE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C479142FC03B435286D225A6BFA1BF18"
-            {
-            "SourcePath" = "8:..\\AutoGitClient\\bin\\Debug\\autogit.cmd"
-            "TargetName" = "8:autogit.cmd"
             "Tag" = "8:"
             "Folder" = "8:_A82F526FBBBE4E628D19749427CB5BF6"
             "Condition" = "8:"
@@ -248,7 +277,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Auto Git Client"
         "ProductCode" = "8:{ECD3F3AB-7A33-4775-B5EE-346F7E6B330F}"
-        "PackageCode" = "8:{57C0A233-DA39-402A-B63A-C33264888972}"
+        "PackageCode" = "8:{06ABAE57-CF92-4987-B9DC-3261B29D255B}"
         "UpgradeCode" = "8:{BD730CCE-2847-41F7-AD95-EE5891181E07}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
@@ -795,7 +824,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
                             "Setting" = "3:2"
-                            "Value" = "8:_6A16840CF68744A8ADEB6E15AD75ABB1"
+                            "Value" = "8:_DC4C1A7B0CAF46A3888151B92D846D61"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "Sunken"

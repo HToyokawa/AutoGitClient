@@ -141,6 +141,11 @@ namespace AutoGitClient
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // TODO: This function is not tested and not implemented at the server side.
+            //       This function is coming soon!
+
+            // The code in this routine is based on the code published on the web site: http://dobon.net/vb/dotnet/internet/webrequestpost.html
+
             frmInput fi = new frmInput();
             string apikey, apikeyenc;
 
@@ -197,7 +202,7 @@ namespace AutoGitClient
 
             // Make an WebRequest
             System.Net.WebRequest req =
-                System.Net.WebRequest.Create("http://mydic.fluxflex.com/");
+                System.Net.WebRequest.Create("http://www.fluxflex.com/connect/projects");
             
             // Set the WebRequest
             req.Method = "POST";
@@ -233,6 +238,11 @@ namespace AutoGitClient
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvChanges_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

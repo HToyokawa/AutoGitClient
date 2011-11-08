@@ -151,6 +151,11 @@ namespace AutoGitClient
 
         public void WriteLog(string str)
         {
+            if (str.IndexOf("DEBUG:") >= 0)
+            {
+                // If the string to write to logs contains "DEBUG:", discard the line.
+                return;
+            }
             str = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString() + " - " + str + "\r\n";
             this.SetOutput(f1.txtOutput.Text + str);
 

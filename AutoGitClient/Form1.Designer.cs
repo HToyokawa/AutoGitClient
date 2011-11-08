@@ -75,29 +75,30 @@
             this.lvChanges.TabIndex = 2;
             this.lvChanges.UseCompatibleStateImageBehavior = false;
             this.lvChanges.View = System.Windows.Forms.View.Details;
+            this.lvChanges.SelectedIndexChanged += new System.EventHandler(this.lvChanges_SelectedIndexChanged);
             // 
             // chRepo
             // 
             this.chRepo.Text = "Repository Path";
-            this.chRepo.Width = 257;
+            this.chRepo.Width = 364;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(80, 12);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Watching:";
+            this.label1.Text = "Watching Path:";
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(69, 17);
+            this.textBox1.Location = new System.Drawing.Point(98, 17);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(690, 19);
+            this.textBox1.Size = new System.Drawing.Size(661, 19);
             this.textBox1.TabIndex = 4;
             // 
             // txtOutput
@@ -164,10 +165,10 @@
             this.linkLabel7.AutoSize = true;
             this.linkLabel7.Location = new System.Drawing.Point(460, 5);
             this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(133, 12);
+            this.linkLabel7.Size = new System.Drawing.Size(114, 12);
             this.linkLabel7.TabIndex = 12;
             this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "Copy from Remote Repo.";
+            this.linkLabel7.Text = "Pull from the Remote";
             this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // linkLabel8
@@ -175,10 +176,10 @@
             this.linkLabel8.AutoSize = true;
             this.linkLabel8.Location = new System.Drawing.Point(175, 5);
             this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(77, 12);
+            this.linkLabel8.Size = new System.Drawing.Size(126, 12);
             this.linkLabel8.TabIndex = 12;
             this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "Get All Repo...";
+            this.linkLabel8.Text = "Clone All Repositories...";
             this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
             // linkLabel5
@@ -186,10 +187,10 @@
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.Location = new System.Drawing.Point(307, 5);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(126, 12);
+            this.linkLabel5.Size = new System.Drawing.Size(124, 12);
             this.linkLabel5.TabIndex = 12;
             this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Pull from Remote Repo.";
+            this.linkLabel5.Text = "Clone from the Remote";
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // linkLabel4
